@@ -1,0 +1,13 @@
+/*
+ * BLE garage door opener remote control
+ *
+ * Copyright (C) 2020, Stephan <kiffie@mailbox.org>
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ *
+ */
+
+#include <rxm_key.h>
+
+const uint8_t gd_rxm_key[] = {
+    ${RXM_KEY}
+};
