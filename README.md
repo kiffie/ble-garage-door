@@ -5,7 +5,7 @@ can be used to control a garage door drive from a smartphone.
 
 A particularity of this project is that BLE advertising PDUs are used,
 thereby avoiding connection setup delays. The system thus responds as
-quickly to a remote control command as classical hardware garage door
+quickly to a remote control command as a classical hardware garage door
 transmitter receiver combination would do. There is one-way communication
 from the smartphone to the receiver only, which is secured by HMAC. The idea
 was to keep everything simple, both the hardware as well as the software.
