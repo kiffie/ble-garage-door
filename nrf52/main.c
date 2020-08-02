@@ -4,19 +4,6 @@
  * Copyright (C) 2020, Stephan <kiffie@mailbox.org>
  * SPDX-License-Identifier: GPL-2.0-or-later
  *
- *
- *
- * Pin assignments
- *
- * P0.16    LED
- * P0.18    Debug TxD
- * P0.19    Relay
- * P0.20    Button (Pull Down needed)
- *
- * P0.22    on module RGB LED red
- * P0.23    on module RGB LED blue
- * P0.24    on module RGB LED green
- *
  */
 
 #include <gd_config.h>
