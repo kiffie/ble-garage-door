@@ -53,7 +53,7 @@ class SetupDialogFragment(private val rxmkeyCallback: (ByteArray) -> Unit) : Dia
                     rxmkey = try {
                         base32.decode(base32Text.toString())
                     } catch (e: IllegalArgumentException) {
-                        // use empty byte array in case of invalid imput base33 string
+                        // use empty byte array in case of invalid input base33 string
                         byteArrayOf()
                     }
                     val crc32 = CRC32()

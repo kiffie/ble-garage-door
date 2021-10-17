@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Garage Door</string>
     <string name="action_settings">Settings</string>
-    <string name="setup_masterkey">Reciver Master Key (base32)</string>
-    <string name="ok">Ok</string>
+    <string name="setup_masterkey">Receiver Master Key (base32)</string>
+    <string name="ok">OK</string>
     <string name="setup_title">Master Key Entry</string>
     <string name="setup_info">Enter Receiver Master Key (white space and hyphens are ignored)</string>
 </resources>

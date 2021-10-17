@@ -65,9 +65,6 @@ class MainActivity : AppCompatActivity() {
             putString("id_key", Base64.encodeBase64String(id.key))
             commit()
         }
-
-
-
     }
 
     private fun calculateTxKey(uuid: UUID, rxm_key: ByteArray) : ByteArray {
@@ -90,7 +87,7 @@ class MainActivity : AppCompatActivity() {
         sud.show(supportFragmentManager, "SetupDialogFragment")
     }
 
-    fun bleAdv(id: Identity) {
+    private fun bleAdv(id: Identity) {
         if (!bluetoothAdapter!!.isEnabled) {
             val btenaEvent = Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE)
             startActivityForResult(btenaEvent, 0)
@@ -106,9 +103,9 @@ class MainActivity : AppCompatActivity() {
         val mac = Mac.getInstance("HmacSHA256")
         mac.init(keyspec)
         val counter = byteArrayOf(
-            (seqNo shl 24).toByte(),
-            (seqNo shl 16).toByte(),
-            (seqNo shl  8).toByte(),
+            (seqNo ushr 24).toByte(),
+            (seqNo ushr 16).toByte(),
+            (seqNo ushr  8).toByte(),
             seqNo.toByte())
         val digest = mac.doFinal(counter)
 
